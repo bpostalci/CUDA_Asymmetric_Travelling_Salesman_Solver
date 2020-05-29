@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu" />
+    <CudaCompile Include="Graph.cu" />
+    <CudaCompile Include="Solver.cu" />
+    <CudaCompile Include="VectorHelper.cu" />
+    <CudaCompile Include="CudaHelper.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Graph.cuh" />
+    <ClInclude Include="CudaHelper.cuh" />
+    <ClInclude Include="Solver.cuh" />
+    <ClInclude Include="VectorHelper.cuh" />
+  </ItemGroup>
+</Project>
