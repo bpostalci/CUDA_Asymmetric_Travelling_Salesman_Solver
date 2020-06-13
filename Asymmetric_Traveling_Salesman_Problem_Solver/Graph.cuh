@@ -26,8 +26,8 @@ namespace atspSolver
 		int getNumberOfNodes() const;
 		void display() const;
 	private:
-		int numberOfNodes;
-		double* adjacencyMatrix;
+		int numberOfNodes_;
+		double* adjacencyMatrix_;
 		void generateGraph();
 		void copyElementsFromGraph(const Graph& graph);
 	};

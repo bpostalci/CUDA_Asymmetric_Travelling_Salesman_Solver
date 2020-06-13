@@ -19,8 +19,8 @@ namespace atspSolver
 			stream << path[i];
 			if (i != pathSize - 1) stream << " -> ";
 		}
-		stream << "  |  cost: " << totalCost << std::endl;
-		std::cout << stream.str();
+		stream << "  |  cost: " << totalCost;
+		std::cout << stream.str() << std::endl;
 	}
 
 	double calculateCost(const std::vector<int> &v, const Graph &graph)
@@ -67,7 +67,6 @@ namespace atspSolver
 		std::vector<int> v;
 		for (int i = 0; i < graph.getNumberOfNodes(); i++)
 		{
-
 			v.push_back(i);
 		}
 
@@ -81,8 +80,6 @@ namespace atspSolver
 				result = fullCycles[i];
 			}
 		}
-
-		fullCycles.empty();
 
 		return result;
 	}
